@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: #ffffff;
+            width: 25vw;
+            height: 95vh;
+            padding: 7px;
+
+        }
+
+        input {
+            width: 95%;
+            padding: 8px 0px;
+            border: 1px solid gray;
+            border-radius: 2px;
+        }
+
+        button {
+            padding: 5px;
+            width: 90%;
+            background-color: #000000;
+            border-radius: 6px;
+            color: white;
+            border: none;
+            font-size: medium;
+            border: none;
+            border-radius: 2px;
+
+
+
+        }
+
+        select {
+            width: 95%;
+            padding: 8px 0px;
+            border-radius: 2px;
+            font-size: medium;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="input" action="">
+            <h1>Signup</h1>
+            <div>
+                Name:
+                <input type="text">
+            </div>
+            <div class="batch">
+                <legend>Batch:</legend>
+                <select name="1A" id="select" autocomplete="off" required>
+                    <option selected>Sigma 2.O</option>
+                    <option>javascript</option>
+                    <option>mongdb</option>
+                    <option>React</option>
+                </select>
+            </div>
+            <div>
+                Age:
+                <input type="number">
+            </div>
+            <div>
+                Email:
+                <input type="email">
+            </div>
+            <div>
+                Password:
+                <input type="Password">
+            </div>
+            <div><button>SignUp</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
